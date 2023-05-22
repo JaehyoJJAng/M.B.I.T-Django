@@ -4,16 +4,21 @@
 
 <br>
 
-# ⚒️ Tech Stack
-
-![image](https://github.com/JaehyoJJAng/githubio.comment/assets/91415701/cec8d575-3e9c-44bd-9b1a-27157a3a968d)
-
-<br>
-
 # 프로젝트 설명
 
 각종 심리 테스트 페이지를 직접 만들어보고 싶어서 프로젝트를 진행하게 되었다.  
 나만의 심리 테스트 페이지를 구상하고 기획하고 파이썬 진영의 Django 프레임워크를 사용하여 백엔드 기능을 완성하고 배포까지 해볼 것이다.
+
+<br>
+
+# DB 모델  
+![image](https://github.com/JaehyoJJAng/githubio.comment/assets/91415701/5115107e-3241-4765-8dc8-33ef31f9869a)
+
+<br>
+
+# ⚒️ Tech Stack
+
+![image](https://github.com/JaehyoJJAng/githubio.comment/assets/91415701/cec8d575-3e9c-44bd-9b1a-27157a3a968d)
 
 <br>
 
