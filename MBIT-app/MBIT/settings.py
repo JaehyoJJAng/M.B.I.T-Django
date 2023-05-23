@@ -1,4 +1,7 @@
 from pathlib import Path
+from django.core.exceptions import ImproperlyConfigured
+from typing import Optional
+import os,json
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -8,7 +11,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '5z-b&b(+a*z4=(!x(-@mjg&n^)r_)iy-)%(7$s(c*-bimnzxw9'
+SECRET_FILE = os.path.join(BASE_DIR,'secrets.json')
+
+with open(SECRET_FILE,'r') as f:
+    secrets = json.loads(f.read())
+
+def get_secret(setting: str) -> Optional[str]:
+    try:
+        return secrets[setting]
+    except:
+        msg : str = f"Set the {setting} environment"
+        raise ImproperlyConfigured(msg)
+SECRET_KEY = get_secret(setting='SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
