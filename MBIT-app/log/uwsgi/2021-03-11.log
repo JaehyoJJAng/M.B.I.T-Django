@@ -1,0 +1,246 @@
+*** Starting uWSGI 2.0.19.1 (64bit) on [Thu Mar 11 02:14:15 2021] ***
+compiled with version: 7.5.0 on 11 March 2021 01:36:36
+os: Linux-4.4.0-1122-aws #136-Ubuntu SMP Tue Feb 16 22:44:38 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /workspace/testmbit
+writing pidfile to /workspace/testmbit/tmp/MBIT.pid
+detected binary path: /workspace/testmbit/venv/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /workspace/testmbit/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :80 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:45809 (port auto-assigned) fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/testmbit/venv/
+Set PythonHome to /workspace/testmbit/venv/
+Python main interpreter initialized at 0x56402725d450
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x56402725d450 pid: 3521 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 3521)
+spawned uWSGI worker 1 (pid: 3525, cores: 1)
+spawned uWSGI http 1 (pid: 3526)
+subprocess 3522 exited with code 0
+[pid: 3525|app: 0|req: 1/1] 172.17.0.1 () {50 vars in 3103 bytes} [Thu Mar 11 02:14:23 2021] GET / => generated 2236 bytes in 212 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 3525|app: -1|req: -1/2] 172.17.0.1 () {48 vars in 3031 bytes} [Thu Mar 11 02:14:23 2021] GET /static/css/style.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 3525|app: -1|req: -1/3] 172.17.0.1 () {48 vars in 3030 bytes} [Thu Mar 11 02:14:23 2021] GET /static/css/reset.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 3525|app: -1|req: -1/4] 172.17.0.1 () {48 vars in 3103 bytes} [Thu Mar 11 02:14:23 2021] GET /static/image/weniv_logo_black.png => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 3526)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Thu Mar 11 02:27:07 2021] ***
+compiled with version: 7.5.0 on 11 March 2021 01:36:36
+os: Linux-4.4.0-1122-aws #136-Ubuntu SMP Tue Feb 16 22:44:38 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /workspace/testmbit
+writing pidfile to /workspace/testmbit/tmp/MBIT.pid
+detected binary path: /workspace/testmbit/venv/bin/uwsgi
+chdir() to /workspace/testmbit/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /workspace/testmbit/tmp/MBIT.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/testmbit/venv/
+Set PythonHome to /workspace/testmbit/venv/
+Python main interpreter initialized at 0x563f649770e0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x563f649770e0 pid: 4175 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 4175)
+spawned uWSGI worker 1 (pid: 4180, cores: 1)
+subprocess 4176 exited with code 0
+[pid: 4180|app: 0|req: 1/1] 172.17.0.1 () {54 vars in 3172 bytes} [Thu Mar 11 02:27:17 2021] GET / => generated 2236 bytes in 151 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /workspace/testmbit/tmp/MBIT.sock removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Thu Mar 11 02:30:39 2021] ***
+compiled with version: 7.5.0 on 11 March 2021 01:36:36
+os: Linux-4.4.0-1122-aws #136-Ubuntu SMP Tue Feb 16 22:44:38 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /workspace/testmbit
+writing pidfile to /workspace/testmbit/tmp/MBIT.pid
+detected binary path: /workspace/testmbit/venv/bin/uwsgi
+chdir() to /workspace/testmbit/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /workspace/testmbit/tmp/MBIT.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/testmbit/venv/
+Set PythonHome to /workspace/testmbit/venv/
+Python main interpreter initialized at 0x557fcf5eeff0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x557fcf5eeff0 pid: 4410 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 4410)
+spawned uWSGI worker 1 (pid: 4414, cores: 1)
+subprocess 4411 exited with code 0
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /workspace/testmbit/tmp/MBIT.sock removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Thu Mar 11 02:31:00 2021] ***
+compiled with version: 7.5.0 on 11 March 2021 01:36:36
+os: Linux-4.4.0-1122-aws #136-Ubuntu SMP Tue Feb 16 22:44:38 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /workspace/testmbit
+writing pidfile to /workspace/testmbit/tmp/MBIT.pid
+detected binary path: /workspace/testmbit/venv/bin/uwsgi
+chdir() to /workspace/testmbit/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /workspace/testmbit/tmp/MBIT.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/testmbit/venv/
+Set PythonHome to /workspace/testmbit/venv/
+Python main interpreter initialized at 0x556eb18e6ff0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x556eb18e6ff0 pid: 4444 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 4444)
+spawned uWSGI worker 1 (pid: 4449, cores: 1)
+subprocess 4445 exited with code 0
+[pid: 4449|app: 0|req: 1/1] 172.17.0.1 () {54 vars in 3172 bytes} [Thu Mar 11 02:31:06 2021] GET / => generated 2236 bytes in 126 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 4449|app: 0|req: 2/2] 172.17.0.1 () {56 vars in 3203 bytes} [Thu Mar 11 02:31:12 2021] GET / => generated 2236 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /workspace/testmbit/tmp/MBIT.sock removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Thu Mar 11 02:34:19 2021] ***
+compiled with version: 7.5.0 on 11 March 2021 01:36:36
+os: Linux-4.4.0-1122-aws #136-Ubuntu SMP Tue Feb 16 22:44:38 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /workspace/testmbit
+writing pidfile to /workspace/testmbit/tmp/MBIT.pid
+detected binary path: /workspace/testmbit/venv/bin/uwsgi
+chdir() to /workspace/testmbit/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /workspace/testmbit/tmp/MBIT.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/testmbit/venv/
+Set PythonHome to /workspace/testmbit/venv/
+Python main interpreter initialized at 0x5623dcebeff0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x5623dcebeff0 pid: 4600 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 4600)
+spawned uWSGI worker 1 (pid: 4605, cores: 1)
+subprocess 4601 exited with code 0
+[pid: 4605|app: 0|req: 1/1] 172.17.0.1 () {56 vars in 3203 bytes} [Thu Mar 11 02:34:21 2021] GET / => generated 2236 bytes in 257 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 4605|app: 0|req: 2/2] 172.17.0.1 () {54 vars in 3195 bytes} [Thu Mar 11 02:34:23 2021] GET /form/ => generated 37045 bytes in 450 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 4605|app: 0|req: 3/3] 172.17.0.1 () {52 vars in 3090 bytes} [Thu Mar 11 02:35:36 2021] GET /form/ => generated 37045 bytes in 243 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+Gracefully killing worker 1 (pid: 4605)...
+...gracefully killing workers...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /workspace/testmbit
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/workspace/testmbit/tmp/MBIT.sock)
+running /workspace/testmbit/venv/bin/uwsgi
+[uWSGI] getting INI configuration from /workspace/testmbit/.config/uwsgi/uwsgi.ini
+[uwsgi-static] added mapping for /static => /workspace/testmbit/staticfiles/
+*** Starting uWSGI 2.0.19.1 (64bit) on [Thu Mar 11 02:44:27 2021] ***
+compiled with version: 7.5.0 on 11 March 2021 01:36:36
+os: Linux-4.4.0-1122-aws #136-Ubuntu SMP Tue Feb 16 22:44:38 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /workspace/testmbit
+detected binary path: /workspace/testmbit/venv/bin/uwsgi
+chdir() to /workspace/testmbit/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /workspace/testmbit/tmp/MBIT.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/testmbit/venv/
+Set PythonHome to /workspace/testmbit/venv/
+Python main interpreter initialized at 0x5618c5ac5f80
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x5618c5ac5f80 pid: 4600 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+gracefully (RE)spawned uWSGI master process (pid: 4600)
+spawned uWSGI worker 1 (pid: 5060, cores: 1)
+subprocess 5058 exited with code 0
