@@ -1,14 +1,14 @@
-function scrollUp(){
-    const vheight  = $('.test').height();
+function scrollUp() {
+    const vheight = $('.test').height();
     $('html, body').animate({
-        scrollTop: ((Math.floor($(window).scrollTop() / vheight) - 1) * vheight)
+      scrollTop: ((Math.ceil($(window).scrollTop() / vheight)-1) * vheight)
     }, 500);
-}
+};
 
-function scrollDown(){
-    const vheight  = $('.test').height();
+function scrollDown() {
+    const vheight = $('.test').height();
     $('html, body').animate({
-        scrollTop: ((Math.floor($(window).scrollTop() / vheight) + 1) * vheight)
+        scrollTop: ((Math.floor($(window).scrollTop() / vheight)+1) * vheight)
     }, 500);
 }
 
@@ -29,17 +29,16 @@ $(function(){
         scrollUp();
     });
 
-    $('#form').submit(function(e){
+    $("#form").submit(function() {
         let radios = $('input[type=radio]:checked');
-        console.log(radios);
-        if(radios.length < 2) {
+        if(radios.length < 10) {
             alert("문항이 선택되지 않았습니다.");
             return false;
         }
         return true;
     });
 
-    $('html, body').animate({
+    $("html, body").animate({
         scrollTop: 0
     }, 500);
 });

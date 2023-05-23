@@ -8,4 +8,8 @@ services:
       - "8000"
     volumes:
       - "./mbit-app:/app:ro"
+      - "static_volume:/app/"
     container_name: mbit
+  
+volumes:
+  static_volume:
