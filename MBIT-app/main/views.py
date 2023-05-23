@@ -10,3 +10,11 @@ def index(request):
         "developers": developers,
     }
     return render(request=request,template_name='index.html',context=context)
+
+def form(request):
+    questions = Question.objects.all()
+    
+    context = {
+        "questions": questions,
+    }
+    return render(request=request,template_name='form.html',context=context)
