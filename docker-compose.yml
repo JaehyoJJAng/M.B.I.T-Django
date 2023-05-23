@@ -1,6 +1,18 @@
 version: "3"
 
 services:
+  nginx:
+    depends_on:
+      - "mbit"
+    image: nginx:latest
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - "./nginx/nginx.conf:/etc/nginx/nginx.conf"
+      - "static_volume:/app/staticfiles"
+    container_name: nginx
+
   mbit:
     build: mbit-app/
     restart: always
