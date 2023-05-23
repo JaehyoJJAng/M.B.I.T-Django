@@ -19,6 +19,8 @@ services:
       - "postgres_data:/var/lib/postgresql/data"      
     env_file:
       - "./env/env.prod.db"
+    container_name: postgres
 
 volumes:
   static_volume:
+  postgres_data:
