@@ -2,18 +2,19 @@ version: "3"
 
 services:
   nginx:
+    build: nginx/
     depends_on:
       - "mbit"
-    image: nginx:latest
+      - "certbot"
     restart: always
     ports:
       - "80:80"
       - "443:443"
     volumes:
-      - "./nginx/nginx.conf:/etc/nginx/nginx.conf"
-      - "static_volume:/app/staticfiles"
+      # - "./nginx/nginx.conf:/etc/nginx/conf.d/nginx.conf:ro"
       - "./data/certbot/conf:/etc/letsencrypt"
       - "./data/certbot/www:/var/www/certbot"
+      - "static_volume:/app/staticfiles"
     container_name: nginx
 
   certbot:
