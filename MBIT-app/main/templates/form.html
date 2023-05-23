@@ -7,7 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    {% for question in questions %}
-        <p>{{ question.number }} : {{ question.content }} </p>
-    {% endfor %}</body>
+    <form action="/result/" method="post">
+        {% csrf_token %}
+        {% for question in questions %}
+            <h3>{{ question.number }}번 {{ question.content }}</h3>
+            {% for choice in question.choice_set.all %}
+                <div>
+                    <input type="radio" name="qustion-{{ question.pk }}" id="choice-{{ choice.pk }}" value="{{ choice.developer.pk }}">
+                    <label for="choice-{{ choice.pk }}">{{ forloop.counter }}.{{ choice.content }}</label>
+                </div>
+
+            <hr>
+            {% endfor %}
+            <input type="submit" value="제출하기">
+        {% endfor %}</body>
+    </form>
 </html>
