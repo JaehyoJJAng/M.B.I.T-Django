@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  mbit:
+    build: mbit-app/
+    restart: always
+    expose:
+      - "8000"
+    volumes:
+      - "./mbit-app:/app:ro"
+    container_name: mbit
