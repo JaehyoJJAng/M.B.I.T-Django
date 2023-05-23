@@ -9,7 +9,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - "./nginx/nginx-dev.conf:/etc/nginx/conf.d/nginx.conf:ro"
+      - "./nginx/nginx-dev.conf:/etc/nginx/nginx.conf:ro"
       - "static_volume:/app/staticfiles"
     container_name: nginx
 
