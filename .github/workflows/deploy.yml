@@ -1,0 +1,37 @@
+name: Build to EB
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build EB
+    runs-on: ubuntu-latest
+    steps:
+      - name: "1. Github repostory 체크아웃"
+        uses: actions/checkout@v2
+      
+      - name: "2. 시간대 맞추기"
+        uses: 1466587594/get-current-time@v2 
+        id: current-time
+        with:
+          format: YYYY-MM-DDTHH-mm-ss
+          utcOffset: "+09:00"   
+      
+      - name: "3. 도커이미지 빌드"
+        run: |
+          docker build --tag yshrim12/django-mbit ./mbit-app
+          docker build --tag yshrim12/mbit-nginx ./nginx
+      
+      - name: "4. 도커허브 로그인"
+        uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
+        with:
+          username:  ${{ secrets.DOCKER_USERNAME }} 
+          password:  ${{ secrets.DOCKER_PASSWORD }} 
+      
+      - name: "5. 도커허브로 이미지 푸시"
+        run: |
+          docker push yshrim12/django-mbit
+          docker push yshrim12/mbit-nginx
