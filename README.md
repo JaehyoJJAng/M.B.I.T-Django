@@ -39,8 +39,7 @@
 
 # 🔊 배포 링크
 
-~~[https://www.waytothem.shop]~~(#)  
-(비용 때문에 현재 서버 내림)
+~~https://www.waytothem.shop~~
 
 <br>
 
