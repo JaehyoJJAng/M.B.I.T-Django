@@ -35,3 +35,25 @@ jobs:
         run: |
           docker push yshrim12/django-mbit
           docker push yshrim12/mbit-nginx
+
+      - name: "6. make zip file"
+        run: |
+          mkdir -p deploy
+          cp -R env MBIT-app nginx docker-compose.yml init-letsencrypt.sh deploy/
+          cd deploy && zip -r deploy.zip .
+      
+      - name: "6-1 Check zip file"
+        run: |
+          pwd && ls -lh
+          unzip -l deploy/deploy.zip
+      
+      # - name: "7. Deploy to EB"
+      # uses: einaregilsson/beanstalk-deploy@v20
+      # with:
+      #   aws_access_key:  ${{ secrets.AWS_ACCESS_KEY }} 
+      #   aws_secret_key:  ${{ secrets.AWS_SECRET_KEY }} 
+      #   application_name: aws-eb-mbit     # 엘라스틱 빈스톡 애플리케이션 이름!
+      #   environment_name: Aws-eb-mbit-env # 엘라스틱 빈스톡 환경 이름!
+      #   version_label:  github-action-${{ steps.current-time.outputs.formattedTime }} 
+      #   region: ap-northeast-2
+      #   deployment_package: deploy/deploy.zip
