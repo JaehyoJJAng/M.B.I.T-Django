@@ -1,8 +1,8 @@
 name: Build to EB
 on:
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
   workflow_dispatch:
 
 jobs:
@@ -22,7 +22,7 @@ jobs:
       
       - name: "3. 도커이미지 빌드"
         run: |
-          docker build --tag yshrim12/django-mbit ./mbit-app
+          docker build --tag yshrim12/django-mbit ./MBIT-app
           docker build --tag yshrim12/mbit-nginx ./nginx
       
       - name: "4. 도커허브 로그인"
