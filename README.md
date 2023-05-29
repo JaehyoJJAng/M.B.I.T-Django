@@ -39,7 +39,7 @@
 
 # 🔊 배포 링크
 
-~~https://www.waytothem.shop~~
+[https://www.waytothem.shop](https://www.waytothem.shop) - ~~6월 30일 도메인 만료 예정~~
 
 <br>
 
