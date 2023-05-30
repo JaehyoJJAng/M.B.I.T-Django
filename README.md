@@ -70,4 +70,4 @@ $ pip install -r requirements.txt
 
 | ▶️ 결과 화면 1 | ▶️ 결과 화면 2|
 | :----: | :----: |
-| ![image](https://github.com/JaehyoJJAng/githubio.comment/assets/91415701/8b2a4924-2467-4bc2-b362-1b2e9ab1c9d9) |  ![image](https://github.com/JaehyoJJAng/githubio.comment/assets/91415701/c8d5d62a-6695-4807-941d-c8d9c9e87e6c) |
+| ![image](https://github.com/JaehyoJJAng/githubio.comment/assets/91415701/8b2a4924-2467-4bc2-b362-1b2e9ab1c9d9) |  ![image](https://github.com/JaehyoJJAng/githubio.comment/assets/91415701/abfb26d5-ec43-41a8-8bb6-f93955951b88) |
